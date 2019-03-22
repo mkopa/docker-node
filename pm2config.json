@@ -1,0 +1,20 @@
+{
+  "apps": [
+    {
+      "name": "node",
+      "script": "index.js",
+      "instances": "max",
+      "exec_mode": "cluster",
+      "node_args": "",
+      "env": {
+        "NODE_ENV": "stage"
+      },
+      "env_production": {
+        "NODE_ENV": "production"
+      },
+      "error_file": "/var/log/node/error.log",
+      "log_type": "json",
+      "merge_logs": true
+    }
+  ]
+}
